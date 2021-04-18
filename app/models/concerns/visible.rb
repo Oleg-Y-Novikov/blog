@@ -9,11 +9,11 @@ module Visible
 
   class_methods do
     def public_count
-      where(status: 'public').Continuation
+      where(status: 'public').count
     end
   end
 
-  def arhived?
-    status == 'arhived'
+  def archived?
+    status == 'archived'
   end
 end
